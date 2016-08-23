@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charse="8">
+        <title>My forms</title>
+    </head>
+    <body>
+        <form action="https://formspree.io/bogwind@gmail.com" method="POST">
+            <h2>My form</h2>
+            <hr>
+            <fieldset>
+                <label for="sex">Your sex:</label>
+                <input type="radio" name="sex" value="male" checked>
+                    male
+                <input type="radio" name="sex" value="female">
+                    female
+            </fieldset>
+            <br>
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name" required>
+            <fieldset>
+                <legend>Date of birth</legend>
+                <label for="day">Day</label>
+                <input type="text" name="day" pattern="[0-9]{2}" placeholder="01">
+                <label for="month">Month</label>
+                <select name="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <label for="year">Year</label>
+                <input type="text" name="year" pattern="[0-9]{4}" placeholder="1990">
+            </fieldset>
+            <hr>
+            <fieldset>
+                <label for="email">Your email:</label>
+                <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+            </fieldset>
+            <br>
+            <label for="phone">Phone number:</label>
+            <input type="tel" name="phone">
+            <br>
+            <section>
+                <label name="genres">Your favourite cinema genres :</label>
+                <input type="checkbox" name="genres" value="Crime">Crime
+                <input type="checkbox" name="genres" value="Drama">Drama
+                <input type="checkbox" name="genres" value="Comedy">Comedy
+                <input type="checkbox" name="genres" value="Documentary">Documentary
+                <input type="checkbox" name="genres" value="Thriller">Thriller
+                <input type="checkbox" name="genres" value="Western">Western
+            </section>
+            <label>
+                <input type="checkbox">I agree with the conditions
+            </label>
+            <br>
+            <input type="submit" name="send" value="Send form">
+        </form>
+    </body>
+</html>
